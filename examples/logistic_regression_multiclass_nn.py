@@ -62,5 +62,7 @@ plt.figure()
 plt.pcolormesh(xx, yy, Z, cmap=cmap_light)
 plt.plot(X[0:N-1, 1], X[0:N-1, 2], 'ro', X[N:2*N-1, 1], X[N:2*N-1,2], 'bo', X[2*N:, 1], X[2*N:, 2], 'go')
 plt.axis([np.min(X[:, 1])-0.5, np.max(X[:, 1])+0.5, np.min(X[:, 2])-0.5, np.max(X[:, 2])+0.5])
+plt.savefig('multi_class.png')
 plt.show()
+
 
